@@ -2,6 +2,7 @@
 
 This is a code challenge for ophelos built with sveltekit
 
+![gif of the demo](/static/demo_gif.gif "demo gif")
 
 ### How did you approach the project?
 I wanted to try out the new sveltekit release candidate and this looked like a good project to try it so I used [sveltekit](https://kit.svelte.dev/) as my base application. This meant I could make a nice front end that would show users I&E scores as they filled out their application forms.
