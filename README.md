@@ -19,6 +19,7 @@ For the database schema I only chose to save the expected form data although thi
 
 ### How did you verify your solution?
 I Wrote some unit tests to confirm my logic around I&E grades.
+
 I also tested the solution in chrome and firefox, in firefox I did see some validation issues which I would fix at a later stage.
 
 To peek inside the database you can uncomment the last function in `src\routes\api\applications\+server.ts` and go to `http://localhost:5173/api/applications`
@@ -52,7 +53,7 @@ npm install
 ```
 Create a .env file and insert the following
 ```
-add DATABASE_URL="file:./dev.db"
+DATABASE_URL="file:./dev.db"
 ```
 
 Build the database using:
