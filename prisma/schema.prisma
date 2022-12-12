@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Application {
+  uid        String  @id @default(cuid())
+  created_at DateTime? @default(now())
+  name       String
+  email       String?
+  phone_number       String?
+  date_of_birth  DateTime?
+  address_line_1 String?
+  postcode   String?
+  income_salary Int?
+  income_other Int?
+  expenditure_mortgage Int?
+  expenditure_rent Int?
+  expenditure_utilities Int?
+  expenditure_travel Int?
+  expenditure_food Int?
+  expenditure_loans Int?
+  expenditure_credit_cards Int?
+}
