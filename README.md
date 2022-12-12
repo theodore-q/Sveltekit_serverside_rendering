@@ -1,4 +1,4 @@
-# code challenge for ophelos
+# Code challenge for Ophelos
 
 This is a code challenge for ophelos built with sveltekit
 
