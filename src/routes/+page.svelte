@@ -88,5 +88,5 @@
 </script>
 
 <form use:form>
-	<svelte:component this={stepComponents[step]} bind:step {submitResponse} formData={data} />
+	<svelte:component this={stepComponents[step]} {submitResponse} formData={data} />
 </form>

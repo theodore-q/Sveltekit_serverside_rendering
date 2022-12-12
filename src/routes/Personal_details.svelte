@@ -1,6 +1,5 @@
 <script>
 	export let formData;
-	export let step;
 </script>
 
 <h1 class="title is-1">Income & Expenditure Form</h1>

@@ -2,7 +2,6 @@
 	export let formData;
 	import { getValue } from 'felte';
 	import { parseFloatToInt, ratioToGrade } from '../helpers/helpers';
-	export let step: number;
 
 	let income = 0;
 	let expenditure = 0;
