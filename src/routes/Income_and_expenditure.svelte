@@ -23,7 +23,8 @@
 		parseFloatToInt(getValue($formData, 'expenditure_credit_cards') || '0')
 	].reduce((a, b) => a + b, 0); // get sum of expenditure
 
-	$: grade = ratioToGrade(expenditure / income);
+	$: expenditureToIncomeRatio = expenditure / income;
+	$: grade = ratioToGrade(expenditureToIncomeRatio);
 </script>
 
 <h1 class="title is-1">Income & Expenditure (Monthly)</h1>
@@ -148,7 +149,7 @@
 	<div class="grade-display">
 		<h3><b>Your I&E rating: {grade}</b></h3>
 		<div>Disposable income: £{(income - expenditure) / 100}</div>
-		<div>I&E Ratio: {Math.floor(expenditureToIncomeRatio * 100) || 0}%</div>
+		<div>I&E Ratio: {isFinite(expenditureToIncomeRatio) && Math.floor(expenditureToIncomeRatio * 100) || 0}%</div>
 		<table class="grade-display__table">
 			<caption>Expenditure to Income</caption>
 			<thead>
