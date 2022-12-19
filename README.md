@@ -19,7 +19,7 @@ For the database schema I only chose to save the expected form data although thi
 
 
 ### How did you verify your solution?
-I Wrote some unit tests to confirm my logic around I&E grades.
+I wrote some unit tests to confirm my logic around I&E grades.
 
 I also tested the solution in chrome and firefox, in firefox I did see some validation issues which I would fix at a later stage.
 
@@ -29,7 +29,7 @@ To peek inside the database you can uncomment the last function in `src\routes\a
 There are lots of things I would like to do to improve on this proof of concept:
  - Create a task backlog.
  - Add a form back button to each page.
- - hook into the browser back button functionality
+ - Hook into the browser back button functionality
  - Write tests for the back end
  - Add nicer styling for invalid feilds
  - Add Aria tags everywhere and do an accesibility audit
@@ -38,10 +38,10 @@ There are lots of things I would like to do to improve on this proof of concept:
  - Add proper currency formatting in the inputs
  - Stricter validation for the date of birth fields
  - Stop letting 'e' and negative numbers being a valid numerics in the form.
- - persist the front end data if there is an issue on submission.
- - change the validation from Zod to something else.
- - add analytics
- - add better error handling.
+ - Persist the front end data if there is an issue on submission.
+ - Change the validation from Zod to something else.
+ - Add analytics
+ - Add better error handling.
 
 I would start with user focused issues such as usability and validation issues then add error handling and logging before deploying to production.
 
